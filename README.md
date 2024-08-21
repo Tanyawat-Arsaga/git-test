@@ -18,8 +18,6 @@ _paginate: false
 
 ## 基礎知識
 
-
-
 ### Git
 
 バーション管理ツール(VCS)の一つ、他もたくさんある。
@@ -27,8 +25,6 @@ _paginate: false
 ![alt text](image-1.png)
 
 https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F
-
-
 
 ### Repository
 
@@ -78,6 +74,9 @@ https://stackoverflow.com/questions/57265785/whats-the-difference-between-git-sw
 
 ![bg right contain](image-4.png)
 
+Fast Forward: https://dev.to/zdybit/learn-git-fast-forward-reproducing-github-pull-requests-in-practice-3b8g
+
+
 ---
 
 ![alt text](image-3.png)
@@ -88,9 +87,13 @@ https://www.biteinteractive.com/understanding-git-merge/
 
 ### Remoteは？
 
-git remote
-
 他のところにあるレポジトリ
+
+- `git remote`
+- `git remote add`
+- `git remote remove`
+- `git remote set-url`
+
 
 
 
@@ -195,7 +198,7 @@ https://docs.github.com/en/get-started/using-github/github-flow
 
 ## 関連リンク
 
-- 規定いろいろ（日本語）：https://github.com/manabuyasuda/coding-guidelines/blob/master/html/html-guideline.md
+- (日本語）：https://github.com/manabuyasuda/coding-guidelines/blob/master/html/html-guideline.md
 - https://semver.org/
 
 
