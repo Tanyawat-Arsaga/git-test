@@ -1,39 +1,90 @@
-# Gitいろいろ
+---
+marp: true
+title: GITのいろいろ
+theme: default
+size: 4:3
+headingDivider: 3
+paginate: true
+header: "**Gitのいろいろ**"
+footer: "hoge"
+---
+<!-- 
+_header: ""
+_footer: ""
+_paginate: false
+-->
 
-## 基本
+# Gitのいろいろ
 
-https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F
+## 基礎知識
 
-### Gitは何？
+
+
+### Git
 
 バーション管理ツール(VCS)の一つ、他もたくさんある。
 
 ![alt text](image-1.png)
 
-### Repositoryとは？
+https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F
 
-プロジェクトダイレクトリーに隠れている`.git`フォルダー
 
-### Stageとは（git add. など）
+
+### Repository
+
+プロジェクトダイレクトリーに隠れている`.git`ダイレクトリー
+
+- `git init` 
+
+
+### Stage
+
+Gitにファイルを登録する
 
 - `git add`
 - `git add .`
 
-![alt text](image.png)
+![bg right contain](image.png)
 
-### Commitは何？
+https://stackoverflow.com/questions/3689838/whats-the-difference-between-head-working-tree-and-index-in-git
 
-- `git commit`
-- `git commit -m　"feat: hogefuga"`
-- `git commit --allow-empty -m "chore: trigger CI"`
+---
 
-### Branchとは？
+![alt text](image-10.png)
 
-- ``
+### Commit
+
+- `git commit` - コミットする、テキストエディターを開く
+- `git commit -m　"feat: hogefuga"` - コミットする
+- `git commit --allow-empty -m "chore: trigger CI"` - 空のコミットを作る
+- `git commit -a` - 全部のファイルをaddして同時ににコミットする。
+
+
+
+### Branch
+
+- `git branch` - ブランチ一覧
+- `git branch -d <ブランチ名>` - ブランチを削除する
+- `git switch <ブランチ名>` - ブランチを切り替え　<- Newらしい
+- `git switch -c <新ブランチ名>` - ブランチを作成して、切り替えする。（`git checkout -b <新ブランチ名>`）
+
+https://stackoverflow.com/questions/57265785/whats-the-difference-between-git-switch-and-git-checkout-branch
+
+
 
 ### Mergeとは？
 
-![alt text](image-4.png)
+ブランチを統合する
+
+![bg right contain](image-4.png)
+
+---
+
+![alt text](image-3.png)
+
+https://www.biteinteractive.com/understanding-git-merge/
+
+
 
 ### Remoteは？
 
@@ -41,31 +92,53 @@ git remote
 
 他のところにあるレポジトリ
 
+
+
 ### Push/Pullとは？
 
+リモート同期する
 
 
-### Mergeとは？
-
-![alt text](image-3.png)
-
-### Rebaseとは？
-
-https://docs.gitlab.com/ee/topics/git/git_rebase.html
-
-![alt text](image-2.png)
 
 ## 応用編
 
-### Cherry Pick
+
 
 ### Reset
 
+現在のブランチ（HEAD）を特定のコミットに移動する
+
+
+
+### Revert
+
+![bg right contain](image-6.png)
+
+https://www.atlassian.com/git/tutorials/undoing-changes/git-revert
+
+
+
+### Cherry Pick
+
+あるコミットの内容を、現在のブランチに追加する。
+
+![bg right contain](image-7.png)
+
+### Rebase
+
+https://docs.gitlab.com/ee/topics/git/git_rebase.html
+
+![bg right contain](image-2.png)
+
 ### Blame
 
-![alt text](image-5.png)
+誰かこの行を書いたのを見れる
 
-## よく使うコマンド
+`git blame <ファイル名>`
+
+（大体vscodeを見ている）
+
+https://www.r-staffing.co.jp/engineer/entry/20200626_1
 
 ## コミットメッセージ規定
 
@@ -74,19 +147,34 @@ https://docs.gitlab.com/ee/topics/git/git_rebase.html
 - Conventional Commits: https://www.conventionalcommits.org/en/v1.0.0/
 - https://zenn.dev/itosho/articles/git-commit-message-2023
 
+
+
 ## Git運用・手法など
+
+https://graphite.dev/guides/git-branching-strategies
 
 ### GitFlow
 
+![bg right contain](image-8.png)
 https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+https://docs.github.com/en/get-started/using-github/github-flow
+
+
 
 ### GitHub Flow
 
+![alt text](image-9.png)
+
+https://docs.github.com/en/get-started/using-github/github-flow
 
 
 ### Stacked Diffs
 
-https://newsletter.pragmaticengineer.com/p/stacked-diffs
+- （英語）https://newsletter.pragmaticengineer.com/p/stacked-diffs
+- （日本語）https://engineering.mercari.com/blog/entry/20231209-git-branch-strategy-stacked-diffs-case-study/
+- Graphite: https://graphite.dev/
+
+
 
 ## Gitソフトウエア
 
@@ -95,12 +183,11 @@ https://newsletter.pragmaticengineer.com/p/stacked-diffs
 - Gitkraken
 - ほかもいろいろ
 
-## 最近流行ってる
 
-- Graphite: https://graphite.dev/
 
 ## 関連リンク
 
 - 規定いろいろ（日本語）：https://github.com/manabuyasuda/coding-guidelines/blob/master/html/html-guideline.md
-- 
+- https://semver.org/
+
 
