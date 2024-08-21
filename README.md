@@ -99,7 +99,6 @@ git remote
 リモート同期する
 
 
-
 ## 応用編
 
 
@@ -139,6 +138,15 @@ https://docs.gitlab.com/ee/topics/git/git_rebase.html
 （大体vscodeを見ている）
 
 https://www.r-staffing.co.jp/engineer/entry/20200626_1
+
+### 他のコマンド
+
+- `git log`
+- `git log --oneline`
+- `git reflog`
+- `git show`
+- `git ls-tree`
+- `git log --pretty=oneline --graph --decorate --all`
 
 ## コミットメッセージ規定
 
