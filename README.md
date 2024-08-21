@@ -1,6 +1,6 @@
 ---
 marp: true
-title: GIT222 main
+title: GIT222 hoge3
 theme: default
 size: 4:3
 headingDivider: 3
