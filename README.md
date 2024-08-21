@@ -51,9 +51,9 @@ https://stackoverflow.com/questions/3689838/whats-the-difference-between-head-wo
 ### Commit
 
 - `git commit` - コミットする、テキストエディターを開く
-- `git commit -m　"feat: hogefuga"` - コミットする
+- `git commit -m　"feat: hogefuga"` - コミットする :smile:
 - `git commit --allow-empty -m "chore: trigger CI"` - 空のコミットを作る
-- `git commit -a` - 全部のファイルをaddして同時ににコミットする。
+- `git commit -a` - 全部のファイルをaddして同時ににコミットする。:sparkles:
 
 
 
