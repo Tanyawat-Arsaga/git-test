@@ -14,7 +14,7 @@ _footer: ""
 _paginate: false
 -->
 
-# Gitのいろいろ
+# Gitです
 
 ## 基礎知識
 
