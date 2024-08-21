@@ -1,6 +1,6 @@
 ---
 marp: true
-title: GITのいろいろ
+title: GIT222
 theme: default
 size: 4:3
 headingDivider: 3
