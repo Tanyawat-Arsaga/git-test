@@ -1,6 +1,6 @@
 ---
 marp: true
-title: GITのいろいろ
+title: GIT
 theme: default
 size: 4:3
 headingDivider: 3
@@ -53,7 +53,7 @@ https://stackoverflow.com/questions/3689838/whats-the-difference-between-head-wo
 - `git commit` - コミットする、テキストエディターを開く
 - `git commit -m　"feat: hogefuga"` - コミットする :smile:
 - `git commit --allow-empty -m "chore: trigger CI"` - 空のコミットを作る
-- `git commit -a` - 全部のファイルをaddして同時ににコミットする。:sparkles:
+:sparkles:- `git commit -a` - 全部のファイルをaddして同時ににコミットする。
 
 
 
