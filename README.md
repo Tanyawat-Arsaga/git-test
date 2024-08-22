@@ -1,12 +1,12 @@
 ---
 marp: true
-title: GIT222 hoge3
+title: GITのいろいろ
 theme: default
 size: 4:3
 headingDivider: 3
 paginate: true
 header: "**Gitのいろいろ**"
-footer: "hoge"
+# footer: "hoge"
 ---
 <!-- 
 _header: ""
@@ -14,7 +14,7 @@ _footer: ""
 _paginate: false
 -->
 
-# Gitです
+# Gitのいろいろ
 
 ## 基礎知識
 
@@ -100,6 +100,10 @@ https://www.biteinteractive.com/understanding-git-merge/
 ### Push/Pullとは？
 
 リモート同期する
+
+- `git push <リモート> <ブランチ>` 
+- `git pull <リモート> <ブランチ>`
+  - `git fetch + git merge <リモート/ブランチ>`
 
 
 ## 応用編
@@ -192,13 +196,15 @@ https://docs.github.com/en/get-started/using-github/github-flow
 - Vscode + Gitlens + Gitgraph
 - Fork
 - Gitkraken
+- sourcetree
+- bitbucket
 - ほかもいろいろ
 
 
 
 ## 関連リンク
 
-- (日本語）：https://github.com/manabuyasuda/coding-guidelines/blob/master/html/html-guideline.md
+- (日本語)：https://github.com/manabuyasuda/coding-guidelines/blob/master/html/html-guideline.md
 - https://semver.org/
 
 

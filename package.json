@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "generate": "npx @marp-team/marp-cli@latest --allow-local-files README.md -o slides.pdf"
+  }
+}
